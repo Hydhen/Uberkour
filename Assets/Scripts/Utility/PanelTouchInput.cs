@@ -16,8 +16,13 @@ public class PanelTouchInput : MonoBehaviour {
     [Tooltip("Amount of force to apply")]
     public float Force = 5f;
 
+    [Tooltip("Maximum Acceleration from Input")]
+    public float MaxUserAcceleration = 5f;
+
 
     private MeshRenderer Renderer = null;
+
+    private float Acceleration = 0f;
 
 
     #region Public Methods
@@ -49,6 +54,7 @@ public class PanelTouchInput : MonoBehaviour {
         if (DebugRenderer)
         {
             Renderer.enabled = false;
+            Acceleration = 0f;
         }
     }
 
@@ -60,7 +66,15 @@ public class PanelTouchInput : MonoBehaviour {
 
             if (rb)
             {
-                rb.AddForce(new Vector2(Force * Time.deltaTime, 0));
+                rb.AddForce(new Vector2(Force * Time.deltaTime + Acceleration, 0));
+                if (MaxUserAcceleration < 0f)
+                {                    
+                    Acceleration -= 0.1f;
+                }
+                else
+                {
+                    Acceleration += 0.1f;
+                }
             }
             else
             {
