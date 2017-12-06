@@ -3227,7 +3227,6 @@ GameObject:
   - component: {fileID: 1420640711}
   - component: {fileID: 1420640710}
   - component: {fileID: 1420640713}
-  - component: {fileID: 1420640714}
   m_Layer: 9
   m_Name: Body
   m_TagString: Untagged
@@ -3401,18 +3400,6 @@ SpringJoint2D:
   m_Distance: 0.86302835
   m_DampingRatio: 0
   m_Frequency: 7
---- !u!114 &1420640714
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1420640706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 777e71df31a2d46dea7cb062b08e25e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Force: 5
 --- !u!61 &1420640715
 BoxCollider2D:
   m_ObjectHideFlags: 0
