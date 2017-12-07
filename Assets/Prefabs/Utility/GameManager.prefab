@@ -51,7 +51,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4214617482587166}
   m_Layer: 0
-  m_Name: Tutorial
+  m_Name: Tutorials
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -168,7 +168,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49167f7285e624d3599b45bfdeaf1ea5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsLastLevel: 0
+  NextLevelButton: {fileID: 0}
   Menu: {fileID: 0}
+  UI: {fileID: 0}
+  InGameMenu: {fileID: 0}
+  MenuEnd: {fileID: 0}
 --- !u!114 &114816391258107992
 MonoBehaviour:
   m_ObjectHideFlags: 1
