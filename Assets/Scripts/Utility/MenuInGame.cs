@@ -2,8 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MenuInGame : MonoBehaviour {
+
+    [Tooltip("Check if this is the Last Level")]
+    public bool IsLastLevel = true;
+
+    [Tooltip("Button will be disabled for the Last Level")]
+    public Button NextLevelButton = null;
 
     [Tooltip("Menu GameObject")]
     public GameObject Menu = null;
@@ -14,11 +21,16 @@ public class MenuInGame : MonoBehaviour {
     [Tooltip("Menu In Game GameObject")]
     public GameObject InGameMenu = null;
 
+    [Tooltip("End Menu GameObject")]
+    public GameObject MenuEnd = null;
+
 
     private float LastTimeScale = 0;
 
 
     #region Public Methods
+
+    #region Button Management
 
     public void OnMenuButtonPressed()
     {
@@ -31,7 +43,7 @@ public class MenuInGame : MonoBehaviour {
 
     public void OnRetryButtonPressed()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void OnBackButtonPressed()
@@ -48,6 +60,27 @@ public class MenuInGame : MonoBehaviour {
         SceneManager.LoadScene("Main Menu");
     }
 
+    public void OnNextLevelButtonPressed()
+    {
+        if (IsLastLevel == false)
+        {
+            Time.timeScale = 1;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+    }
+
+    #endregion
+
+
+    public void EndLevel()
+    {
+        LastTimeScale = Time.timeScale;
+        Time.timeScale = 0;
+        UI.SetActive(false);
+        InGameMenu.SetActive(false);
+        MenuEnd.SetActive(true);
+    }
+
     #endregion
 
 
@@ -59,6 +92,26 @@ public class MenuInGame : MonoBehaviour {
         {
             Debug.LogError("<color='Red'>No Menu given</color>");
         }
+
+        if (UI == null)
+        {
+            Debug.LogError("<color='Red'>No UI given</color>");
+        }
+
+        if (InGameMenu == null)
+        {
+            Debug.LogError("<color='Red'>No In Game Menu given</color>");
+        }
+
+        if (MenuEnd == null)
+        {
+            Debug.LogError("<color='Red'>No End Menu given</color>");
+        }
+
+        if (NextLevelButton && IsLastLevel)
+        {
+            NextLevelButton.interactable = false;
+        }
     }
 
     private void Start()
@@ -66,6 +119,11 @@ public class MenuInGame : MonoBehaviour {
         if (Menu)
         {
             Menu.SetActive(false);
+        }
+
+        if (MenuEnd)
+        {
+            MenuEnd.SetActive(false);
         }
     }
 
