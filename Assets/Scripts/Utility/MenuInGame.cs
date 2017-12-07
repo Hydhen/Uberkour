@@ -21,6 +21,11 @@ public class MenuInGame : MonoBehaviour {
         Time.timeScale = 0;
     }
 
+    public void OnRetryButtonPressed()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
     public void OnBackButtonPressed()
     {
         Menu.SetActive(false);
