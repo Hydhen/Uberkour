@@ -33,6 +33,11 @@ public class MainMenu : MonoBehaviour {
         SceneManager.LoadScene(EventSystem.current.currentSelectedGameObject.name.ToString());
     }
 
+    public void OnQuitButtonPressed()
+    {
+        Application.Quit();
+    }
+
     #endregion
 
 
