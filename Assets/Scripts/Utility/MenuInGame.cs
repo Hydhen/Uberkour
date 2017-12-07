@@ -8,6 +8,12 @@ public class MenuInGame : MonoBehaviour {
     [Tooltip("Menu GameObject")]
     public GameObject Menu = null;
 
+    [Tooltip("UI GameObject")]
+    public GameObject UI = null;
+
+    [Tooltip("Menu In Game GameObject")]
+    public GameObject InGameMenu = null;
+
 
     private float LastTimeScale = 0;
 
@@ -16,6 +22,8 @@ public class MenuInGame : MonoBehaviour {
 
     public void OnMenuButtonPressed()
     {
+        InGameMenu.SetActive(false);
+        UI.SetActive(false);
         Menu.SetActive(true);
         LastTimeScale = Time.timeScale;
         Time.timeScale = 0;
@@ -29,6 +37,8 @@ public class MenuInGame : MonoBehaviour {
     public void OnBackButtonPressed()
     {
         Menu.SetActive(false);
+        UI.SetActive(true);
+        InGameMenu.SetActive(true);
         Time.timeScale = LastTimeScale;
     }
 
