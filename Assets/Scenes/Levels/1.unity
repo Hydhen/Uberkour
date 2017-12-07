@@ -2085,6 +2085,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 114203279057141308, guid: b82859f6132234ec29b418ae1300b043,
+        type: 2}
+      propertyPath: MIG
+      value: 
+      objectReference: {fileID: 545888781}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b82859f6132234ec29b418ae1300b043, type: 2}
   m_IsPrefabParent: 0
@@ -3454,6 +3459,26 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 545888781}
+    - target: {fileID: 114050335186744674, guid: 9446e09b58544476d9134a673f0bed03,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 545888781}
+    - target: {fileID: 114050335186744674, guid: 9446e09b58544476d9134a673f0bed03,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnQuitButtonPressed
+      objectReference: {fileID: 0}
+    - target: {fileID: 114810965889908614, guid: 9446e09b58544476d9134a673f0bed03,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 545888781}
+    - target: {fileID: 114810965889908614, guid: 9446e09b58544476d9134a673f0bed03,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnNextLevelButtonPressed
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9446e09b58544476d9134a673f0bed03, type: 2}
   m_IsPrefabParent: 0
