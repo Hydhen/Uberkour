@@ -506,6 +506,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TutorialGameObject: {fileID: 915801548}
   NextButton: {fileID: 1042715469}
+  ObjectToDisable:
+  - {fileID: 1018271298}
+  - {fileID: 1721433415}
   Tutos:
   - {fileID: 403675964}
   - {fileID: 945514205}
@@ -1664,6 +1667,22 @@ Prefab:
     - target: {fileID: 224467992103221082, guid: 9446e09b58544476d9134a673f0bed03,
         type: 2}
       propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1543906424013544, guid: 9446e09b58544476d9134a673f0bed03, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1954902472263086, guid: 9446e09b58544476d9134a673f0bed03, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1643957450491626, guid: 9446e09b58544476d9134a673f0bed03, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1483296877591156, guid: 9446e09b58544476d9134a673f0bed03, type: 2}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
