@@ -16,9 +16,6 @@ public class GenerateButtons : MonoBehaviour {
     [Tooltip("Space between 2 Buttons")]
     public float ButtonMargin = 10f;
 
-    [Tooltip("Number of Levels")]
-    public int NumberOfLevel = 2;
-
     [Tooltip("Sprite to use for Button")]
     public Sprite ButtonSprite = null;
 
@@ -29,6 +26,8 @@ public class GenerateButtons : MonoBehaviour {
     private RectTransform RT = null;
 
     private SaveAndLoad SAL = null;
+
+    private int NumberOfLevels = 0;
 
     private float HorizontalPadding = 0f;
 
@@ -99,7 +98,7 @@ public class GenerateButtons : MonoBehaviour {
         int row = 0;
         int col = 0;
 
-        for (int i = 0; i < NumberOfLevel; i++)
+        for (int i = 0; i < NumberOfLevels; i++)
         {
             GameObject gO = CreateButton((i + 1).ToString());
 
@@ -146,6 +145,7 @@ public class GenerateButtons : MonoBehaviour {
         if (SAL)
         {
             HighestLevel = SAL.GetProgression();
+            NumberOfLevels = SAL.GetNumberOfLevels();
             Debug.Log(HighestLevel);
         }
 

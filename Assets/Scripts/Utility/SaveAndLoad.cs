@@ -37,6 +37,11 @@ public class SaveAndLoad : MonoBehaviour {
         SaveData();
     }
 
+    public int GetNumberOfLevels()
+    {
+        return NumberOfLevels;
+    }
+
 
     private bool LoadData()
     {
