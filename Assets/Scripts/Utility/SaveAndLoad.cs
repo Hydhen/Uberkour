@@ -17,6 +17,11 @@ public class SaveAndLoad : MonoBehaviour {
     private GameData Data = null;
 
 
+    static public SaveAndLoad GetInstance()
+    {
+        return Instance;
+    }
+
     public int GetProgression()
     {
         return Data.Progression;
@@ -48,7 +53,7 @@ public class SaveAndLoad : MonoBehaviour {
         }
 
         Data = new GameData();
-        Data.Progression = 1;
+        Data.Progression = 0;
 
         return false;
     }

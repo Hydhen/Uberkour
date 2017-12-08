@@ -28,6 +28,8 @@ public class GenerateButtons : MonoBehaviour {
 
     private RectTransform RT = null;
 
+    private SaveAndLoad SAL = null;
+
     private float HorizontalPadding = 0f;
 
     private float VerticalPadding = 0f;
@@ -35,6 +37,8 @@ public class GenerateButtons : MonoBehaviour {
     private int HorizontalMaxButtons = 0;
 
     private int VerticalMaxButtons = 0;
+
+    private int HighestLevel = 0;
 
 
     private GameObject CreateLabel(string label)
@@ -100,6 +104,10 @@ public class GenerateButtons : MonoBehaviour {
             GameObject gO = CreateButton((i + 1).ToString());
 
             gO.name = (i + 1).ToString();
+            if (i > HighestLevel)
+            {
+                gO.GetComponent<Button>().interactable = false;
+            }
 
             float posX = -(RT.rect.width / 2) + (col * ButtonWidth)
                 + (col - 1) * ButtonMargin + HorizontalPadding / 2 + ButtonWidth / 2;
@@ -133,6 +141,14 @@ public class GenerateButtons : MonoBehaviour {
 
 	private void Start()
     {
+        SAL = SaveAndLoad.GetInstance();
+
+        if (SAL)
+        {
+            HighestLevel = SAL.GetProgression();
+            Debug.Log(HighestLevel);
+        }
+
         HorizontalMaxButtons = (int)(RT.rect.width / (ButtonWidth + ButtonMargin));
         HorizontalPadding = RT.rect.width % (ButtonWidth + ButtonMargin);
 
