@@ -741,7 +741,7 @@ MonoBehaviour:
     m_MaxSize: 42
     m_Alignment: 4
     m_AlignByGeometry: 0
-    m_RichText: 1
+    m_RichText: 0
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
@@ -804,7 +804,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1341990684
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1130,7 +1130,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1486412575
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1243,6 +1243,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1637751489}
+  - component: {fileID: 1637751490}
   m_Layer: 5
   m_Name: Numbers
   m_TagString: Untagged
@@ -1270,6 +1271,23 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1000, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1637751490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1637751488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0a221c9df04c4e4eacaacd1bf383636, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonHeight: 120
+  ButtonWidth: 120
+  ButtonMargin: 10
+  NumberOfLevel: 18
+  ButtonSprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  mainMenu: {fileID: 69700229}
 --- !u!1 &1817949366
 GameObject:
   m_ObjectHideFlags: 0
@@ -1310,7 +1328,7 @@ GameObject:
   - component: {fileID: 1949578443}
   m_Layer: 0
   m_Name: SaveAndLoad
-  m_TagString: Untagged
+  m_TagString: SaveAndLoad
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
