@@ -154,6 +154,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0e02270bf712b4134ba4ec1768029a99, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &196795406 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114722823034406174, guid: 735de4a3e5032411c8b6706721ae0374,
+    type: 2}
+  m_PrefabInternal: {fileID: 209680667}
+  m_Script: {fileID: 11500000, guid: 78579e4c604544c239afad0ed6375f39, type: 3}
 --- !u!1001 &209680667
 Prefab:
   m_ObjectHideFlags: 0
@@ -161,6 +167,16 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114418884076078480, guid: 735de4a3e5032411c8b6706721ae0374,
+        type: 2}
+      propertyPath: Tutos.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114418884076078480, guid: 735de4a3e5032411c8b6706721ae0374,
+        type: 2}
+      propertyPath: ObjectToDisable.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4967831120121276, guid: 735de4a3e5032411c8b6706721ae0374, type: 2}
       propertyPath: m_LocalPosition.x
       value: -0.16021717
@@ -218,6 +234,21 @@ Prefab:
       propertyPath: NextLevelButton
       value: 
       objectReference: {fileID: 1733392532}
+    - target: {fileID: 114418884076078480, guid: 735de4a3e5032411c8b6706721ae0374,
+        type: 2}
+      propertyPath: Tutos.Array.data[0]
+      value: 
+      objectReference: {fileID: 196795406}
+    - target: {fileID: 114418884076078480, guid: 735de4a3e5032411c8b6706721ae0374,
+        type: 2}
+      propertyPath: Tutos.Array.data[1]
+      value: 
+      objectReference: {fileID: 1218009561}
+    - target: {fileID: 114441724740655512, guid: 735de4a3e5032411c8b6706721ae0374,
+        type: 2}
+      propertyPath: IsLastLevel
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 735de4a3e5032411c8b6706721ae0374, type: 2}
   m_IsPrefabParent: 0
@@ -556,6 +587,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0e02270bf712b4134ba4ec1768029a99, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1218009561 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114135984274245446, guid: 735de4a3e5032411c8b6706721ae0374,
+    type: 2}
+  m_PrefabInternal: {fileID: 209680667}
+  m_Script: {fileID: 11500000, guid: 78579e4c604544c239afad0ed6375f39, type: 3}
 --- !u!114 &1251494712 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114441724740655512, guid: 735de4a3e5032411c8b6706721ae0374,
@@ -694,6 +731,18 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1251494712}
+    - target: {fileID: 1412616470911386, guid: 9446e09b58544476d9134a673f0bed03, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1483296877591156, guid: 9446e09b58544476d9134a673f0bed03, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1543906424013544, guid: 9446e09b58544476d9134a673f0bed03, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9446e09b58544476d9134a673f0bed03, type: 2}
   m_IsPrefabParent: 0

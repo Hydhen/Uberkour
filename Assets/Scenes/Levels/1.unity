@@ -438,6 +438,36 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114722823034406174, guid: 735de4a3e5032411c8b6706721ae0374,
+        type: 2}
+      propertyPath: Title
+      value: 
+      objectReference: {fileID: 1657232375}
+    - target: {fileID: 114722823034406174, guid: 735de4a3e5032411c8b6706721ae0374,
+        type: 2}
+      propertyPath: Content
+      value: 
+      objectReference: {fileID: 1274135930}
+    - target: {fileID: 114418884076078480, guid: 735de4a3e5032411c8b6706721ae0374,
+        type: 2}
+      propertyPath: TutorialGameObject
+      value: 
+      objectReference: {fileID: 915801548}
+    - target: {fileID: 114418884076078480, guid: 735de4a3e5032411c8b6706721ae0374,
+        type: 2}
+      propertyPath: NextButton
+      value: 
+      objectReference: {fileID: 1042715469}
+    - target: {fileID: 114418884076078480, guid: 735de4a3e5032411c8b6706721ae0374,
+        type: 2}
+      propertyPath: ObjectToDisable.Array.data[0]
+      value: 
+      objectReference: {fileID: 1018271298}
+    - target: {fileID: 114418884076078480, guid: 735de4a3e5032411c8b6706721ae0374,
+        type: 2}
+      propertyPath: ObjectToDisable.Array.data[1]
+      value: 
+      objectReference: {fileID: 1721433415}
     - target: {fileID: 114441724740655512, guid: 735de4a3e5032411c8b6706721ae0374,
         type: 2}
       propertyPath: NextLevelButton
@@ -463,60 +493,25 @@ Prefab:
       propertyPath: MenuEnd
       value: 
       objectReference: {fileID: 1715963600}
-    - target: {fileID: 1276637675629808, guid: 735de4a3e5032411c8b6706721ae0374, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
+    - target: {fileID: 114135984274245446, guid: 735de4a3e5032411c8b6706721ae0374,
+        type: 2}
+      propertyPath: Title
+      value: 
+      objectReference: {fileID: 1217725302}
+    - target: {fileID: 114135984274245446, guid: 735de4a3e5032411c8b6706721ae0374,
+        type: 2}
+      propertyPath: Content
+      value: 
+      objectReference: {fileID: 756105851}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 735de4a3e5032411c8b6706721ae0374, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &403675962 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1728109216965668, guid: 735de4a3e5032411c8b6706721ae0374,
+--- !u!114 &403675965 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114418884076078480, guid: 735de4a3e5032411c8b6706721ae0374,
     type: 2}
   m_PrefabInternal: {fileID: 403675961}
---- !u!1 &403675963 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1276637675629808, guid: 735de4a3e5032411c8b6706721ae0374,
-    type: 2}
-  m_PrefabInternal: {fileID: 403675961}
---- !u!114 &403675964
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 403675962}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78579e4c604544c239afad0ed6375f39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Title: {fileID: 1657232375}
-  Content: {fileID: 1274135930}
---- !u!114 &403675965
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 403675963}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9eacbd29b05d34c0a930282c5c48af12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TutorialGameObject: {fileID: 915801548}
-  NextButton: {fileID: 1042715469}
-  ObjectToDisable:
-  - {fileID: 1018271298}
-  - {fileID: 1721433415}
-  Tutos:
-  - {fileID: 403675964}
-  - {fileID: 945514205}
---- !u!4 &403675966 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4214617482587166, guid: 735de4a3e5032411c8b6706721ae0374,
-    type: 2}
-  m_PrefabInternal: {fileID: 403675961}
 --- !u!1001 &411832405
 Prefab:
   m_ObjectHideFlags: 0
@@ -771,50 +766,6 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224709815993461796, guid: 9446e09b58544476d9134a673f0bed03,
     type: 2}
   m_PrefabInternal: {fileID: 2126021435}
---- !u!1 &945514203
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1728109216965668, guid: 735de4a3e5032411c8b6706721ae0374,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 945514204}
-  - component: {fileID: 945514205}
-  m_Layer: 0
-  m_Name: Brake
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &945514204
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 4123917512797068, guid: 735de4a3e5032411c8b6706721ae0374,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 945514203}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 403675966}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &945514205
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 945514203}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78579e4c604544c239afad0ed6375f39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Title: {fileID: 1217725302}
-  Content: {fileID: 756105851}
 --- !u!1 &1018271298 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1483296877591156, guid: 9446e09b58544476d9134a673f0bed03,
