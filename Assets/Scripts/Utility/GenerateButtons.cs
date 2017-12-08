@@ -139,11 +139,6 @@ public class GenerateButtons : MonoBehaviour {
         VerticalMaxButtons = (int)(RT.rect.height / (ButtonHeight + ButtonMargin));
         VerticalPadding = RT.rect.height % (ButtonHeight + ButtonMargin);
 
-        Debug.Log("Horizontal Buttons: " + HorizontalMaxButtons + " with Padding of " + (HorizontalPadding + ButtonMargin) / 2 + " and Margin of " + ButtonMargin);
-        Debug.Log("Vertical Buttons: " + VerticalMaxButtons + " with Padding of " + (VerticalPadding + ButtonMargin) / 2 + " and Margin of " + ButtonMargin);
-
-        Debug.Log(RT.pivot);
-
         GenerateButtonLoop();
    	}
 	

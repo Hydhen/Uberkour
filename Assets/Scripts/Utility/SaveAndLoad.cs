@@ -8,6 +8,9 @@ public class SaveAndLoad : MonoBehaviour {
     [Tooltip("Number of Level")]
     public int NumberOfLevels = 2;
 
+    [HideInInspector]
+    public static SaveAndLoad Instance = null;
+
 
     private string SaveFileName = "/save.json";
 
@@ -62,6 +65,15 @@ public class SaveAndLoad : MonoBehaviour {
 
 	private void Awake()
     {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else if (Instance != this)
+        {
+            Destroy(gameObject);
+        }
+
         Debug.Log("Save file: " + Application.persistentDataPath + SaveFileName);
 
         DontDestroyOnLoad(gameObject);
