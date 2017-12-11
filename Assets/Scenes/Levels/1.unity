@@ -331,6 +331,10 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1658035262530942, guid: a84090ebc71ef4fd392da1476b8fb0c5, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a84090ebc71ef4fd392da1476b8fb0c5, type: 2}
   m_IsPrefabParent: 0
@@ -1518,6 +1522,11 @@ Prefab:
       propertyPath: MIG
       value: 
       objectReference: {fileID: 545888781}
+    - target: {fileID: 114511820340162610, guid: 94474b3767d8643499c9819957065f0d,
+        type: 2}
+      propertyPath: GameObjectToMute
+      value: 
+      objectReference: {fileID: 1874973683}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 94474b3767d8643499c9819957065f0d, type: 2}
   m_IsPrefabParent: 0

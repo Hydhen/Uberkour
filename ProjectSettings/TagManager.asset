@@ -8,6 +8,7 @@ TagManager:
   - Ground
   - CRS
   - Payload
+  - End
   layers:
   - Default
   - TransparentFX

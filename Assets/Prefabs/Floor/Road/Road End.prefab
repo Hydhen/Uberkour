@@ -56,7 +56,7 @@ GameObject:
   - component: {fileID: 114511820340162610}
   m_Layer: 0
   m_Name: Road End
-  m_TagString: Ground
+  m_TagString: End
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -284,6 +284,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MIG: {fileID: 0}
+  GameObjectToMute: {fileID: 0}
 --- !u!212 &212064430153428558
 SpriteRenderer:
   m_ObjectHideFlags: 1

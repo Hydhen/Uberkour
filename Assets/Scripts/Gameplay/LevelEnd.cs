@@ -8,6 +8,9 @@ public class LevelEnd : MonoBehaviour {
     [Tooltip("Game Manager")]
     public MenuInGame MIG = null;
 
+    [Tooltip("Object that need to stop Sound")]
+    public GameObject GameObjectToMute = null;
+
 
     private SaveAndLoad SAL = null;
 
@@ -16,6 +19,11 @@ public class LevelEnd : MonoBehaviour {
     {
         if (collision.gameObject.tag == "Player")
         {
+            if (GameObjectToMute)
+            {
+                GameObjectToMute.SendMessage("StopSound", null, SendMessageOptions.DontRequireReceiver);
+            }
+
             if (MIG)
             {
                 MIG.EndLevel();
