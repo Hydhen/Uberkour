@@ -54,7 +54,7 @@ public class GenerateButtons : MonoBehaviour {
         rT.anchorMax = new Vector2(1, 1);
 
         text.text = label;
-        text.fontSize = 42;
+        text.fontSize = 32;
         text.font = Resources.GetBuiltinResource(typeof(Font), "Arial.ttf") as Font;
         text.color = Color.black;
         text.alignment = TextAnchor.MiddleCenter;
