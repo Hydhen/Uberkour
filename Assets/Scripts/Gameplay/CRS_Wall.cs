@@ -11,6 +11,7 @@ public class CRS_Wall : MonoBehaviour {
     {
         if (MIG && collision.gameObject.tag == "Player")
         {
+            collision.gameObject.SendMessage("StopSound", null, SendMessageOptions.DontRequireReceiver);
             MIG.GameOver(null);
         }
     }

@@ -22,6 +22,9 @@ public class GenerateButtons : MonoBehaviour {
     [Tooltip("Object containing Callback to use for OnClick() on the Button")]
     public MainMenu mainMenu = null;
 
+    [Tooltip("Font to use")]
+    public Font font = null;
+
 
     private RectTransform RT = null;
 
@@ -55,7 +58,16 @@ public class GenerateButtons : MonoBehaviour {
 
         text.text = label;
         text.fontSize = 32;
-        text.font = Resources.GetBuiltinResource(typeof(Font), "Arial.ttf") as Font;
+
+        if (font)
+        {
+            text.font = font;
+        }
+        else
+        {
+            text.font = Resources.GetBuiltinResource(typeof(Font), "Arial.ttf") as Font;
+        }
+
         text.color = Color.black;
         text.alignment = TextAnchor.MiddleCenter;
 

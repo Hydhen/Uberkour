@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: eac5d3b9d71464f03854db34154f4d6c
+timeCreated: 1513027156
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Hannover Messe
+  fontNames:
+  - Hannover Messe
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
