@@ -1394,6 +1394,11 @@ Prefab:
       propertyPath: ObjectToDisable.Array.data[2]
       value: 
       objectReference: {fileID: 756556044}
+    - target: {fileID: 114441724740655512, guid: 735de4a3e5032411c8b6706721ae0374,
+        type: 2}
+      propertyPath: IsLastLevel
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 735de4a3e5032411c8b6706721ae0374, type: 2}
   m_IsPrefabParent: 0
