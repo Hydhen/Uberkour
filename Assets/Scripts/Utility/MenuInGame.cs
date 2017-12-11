@@ -22,7 +22,10 @@ public class MenuInGame : MonoBehaviour {
     public GameObject InGameMenu = null;
 
     [Tooltip("End Menu GameObject")]
-    public GameObject MenuEnd = null;
+    public GameObject EndMenu = null;
+
+    [Tooltip("GameOver Menu GameObject")]
+    public GameObject GameOverMenu = null;
 
 
     private float LastTimeScale = 0;
@@ -43,6 +46,7 @@ public class MenuInGame : MonoBehaviour {
 
     public void OnRetryButtonPressed()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
@@ -78,7 +82,16 @@ public class MenuInGame : MonoBehaviour {
         Time.timeScale = 0;
         UI.SetActive(false);
         InGameMenu.SetActive(false);
-        MenuEnd.SetActive(true);
+        EndMenu.SetActive(true);
+    }
+
+    public void GameOver()
+    {
+        LastTimeScale = Time.timeScale;
+        Time.timeScale = 0;
+        UI.SetActive(false);
+        InGameMenu.SetActive(false);
+        GameOverMenu.SetActive(true);
     }
 
     #endregion
@@ -103,7 +116,7 @@ public class MenuInGame : MonoBehaviour {
             Debug.LogError("<color='Red'>No In Game Menu given</color>");
         }
 
-        if (MenuEnd == null)
+        if (EndMenu == null)
         {
             Debug.LogError("<color='Red'>No End Menu given</color>");
         }
@@ -121,9 +134,14 @@ public class MenuInGame : MonoBehaviour {
             Menu.SetActive(false);
         }
 
-        if (MenuEnd)
+        if (EndMenu)
         {
-            MenuEnd.SetActive(false);
+            EndMenu.SetActive(false);
+        }
+
+        if (GameOverMenu)
+        {
+            GameOverMenu.SetActive(false);
         }
     }
 
