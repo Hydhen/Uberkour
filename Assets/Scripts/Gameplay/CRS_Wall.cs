@@ -11,7 +11,7 @@ public class CRS_Wall : MonoBehaviour {
     {
         if (MIG && collision.gameObject.tag == "Player")
         {
-            MIG.GameOver();
+            MIG.GameOver(null);
         }
     }
 

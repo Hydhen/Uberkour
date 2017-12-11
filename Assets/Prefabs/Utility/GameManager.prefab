@@ -267,6 +267,7 @@ MonoBehaviour:
   InGameMenu: {fileID: 0}
   EndMenu: {fileID: 0}
   GameOverMenu: {fileID: 0}
+  GameOverContent: {fileID: 0}
 --- !u!114 &114722823034406174
 MonoBehaviour:
   m_ObjectHideFlags: 1

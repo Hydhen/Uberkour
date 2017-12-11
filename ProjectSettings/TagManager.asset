@@ -7,6 +7,7 @@ TagManager:
   - SaveAndLoad
   - Ground
   - CRS
+  - Payload
   layers:
   - Default
   - TransparentFX

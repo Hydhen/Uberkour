@@ -13,7 +13,7 @@ public class Payload : MonoBehaviour {
         {
             if (MIG)
             {
-                MIG.GameOver();
+                MIG.GameOver(null);
             }
             else
             {

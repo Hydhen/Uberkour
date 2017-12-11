@@ -27,6 +27,9 @@ public class MenuInGame : MonoBehaviour {
     [Tooltip("GameOver Menu GameObject")]
     public GameObject GameOverMenu = null;
 
+    [Tooltip("GameOver Label")]
+    public Text GameOverContent = null;
+
 
     private float LastTimeScale = 0;
 
@@ -85,12 +88,16 @@ public class MenuInGame : MonoBehaviour {
         EndMenu.SetActive(true);
     }
 
-    public void GameOver()
+    public void GameOver(string label)
     {
         LastTimeScale = Time.timeScale;
         Time.timeScale = 0;
         UI.SetActive(false);
         InGameMenu.SetActive(false);
+        if (label != null && GameOverContent != null)
+        {
+            GameOverContent.text = label;
+        }
         GameOverMenu.SetActive(true);
     }
 
@@ -119,6 +126,16 @@ public class MenuInGame : MonoBehaviour {
         if (EndMenu == null)
         {
             Debug.LogError("<color='Red'>No End Menu given</color>");
+        }
+
+        if (GameOverMenu == null)
+        {
+            Debug.LogError("<color='Red'>No Game Over Menu given</color>");
+        }
+
+        if (GameOverContent == null)
+        {
+            Debug.LogError("<color='Red'>No Game Over Label given</color>");
         }
 
         if (NextLevelButton && IsLastLevel)
