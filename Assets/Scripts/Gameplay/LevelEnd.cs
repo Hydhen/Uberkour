@@ -31,6 +31,11 @@ public class LevelEnd : MonoBehaviour {
 
     private void Awake()
     {
-        SAL = GameObject.FindGameObjectWithTag("SaveAndLoad").GetComponent<SaveAndLoad>();
+        if (MIG == null)
+        {
+            Debug.LogError("<color='Red'>No Menu In Game given</color>");
+        }
+
+        SAL = SaveAndLoad.GetInstance();
     }
 }
