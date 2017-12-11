@@ -76,6 +76,8 @@ public class Tutorials : MonoBehaviour {
             }
         }
 
+        Tutos = GetComponentsInChildren<Tutorial>();
+
         if (Tutos.Length > 0)
         {
             for (int i = 0; i < Tutos.Length; i++)
