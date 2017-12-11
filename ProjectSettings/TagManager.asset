@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - SaveAndLoad
+  - Ground
+  - CRS
   layers:
   - Default
   - TransparentFX
@@ -15,13 +17,13 @@ TagManager:
   - 
   - 
   - TouchInput
-  - Bike
+  - Player
   - Ground
-  - 
-  - 
-  - 
+  - CRS
   - 
   - Menu
+  - 
+  - 
   - 
   - 
   - 
