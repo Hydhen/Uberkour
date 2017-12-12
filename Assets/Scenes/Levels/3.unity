@@ -2682,8 +2682,8 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "En bon livreur que vous \xEAtes, vous veillerez \xE0 respecter les limitation
-    de vitesse\n\nPour ce faire, surveillez le logo Waize qui vous pr\xE9viendra d'un
-    potientiel poste de CRS !"
+    de vitesse\n\nPour ce faire, surveillez les limitations de vitesse, un fourgon
+    ne doit pas \xEAtre loin !"
 --- !u!4 &1177963840 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4012292246588286, guid: 73ac104085ae54b5faa0d1ad6b4b2b5b,
