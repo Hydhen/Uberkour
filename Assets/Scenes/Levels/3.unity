@@ -1468,7 +1468,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49167f7285e624d3599b45bfdeaf1ea5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsLastLevel: 1
+  IsLastLevel: 0
   NextLevelButton: {fileID: 917883529}
   Menu: {fileID: 19646499}
   UI: {fileID: 1835376177}
